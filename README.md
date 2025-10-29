@@ -9,5 +9,5 @@ Mit dem erste Slider können die Objekte erstaunlich nah zueinander kommen, aber
 Wo wird das Steuern selbst zu einer Erfahrung?<br>
 Es ist interessant zu sehen, wie sich die Farben der Objekte ändern, wenn sie näher kommen. Durch die zusätzlichen Slider werden die Objekte weiter verändert.
 
-Entdeckungen / Inspiration:
-PacMan neu erfunden -> wer schafft es, dass sich eine Form mit einer anderen berührt?
+Entdeckungen / Inspiration:<br>
+PacMan neu erfunden: wer schafft es, dass sich eine Form mit einer anderen berührt?
