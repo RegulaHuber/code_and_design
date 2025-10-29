@@ -2,8 +2,8 @@ let valueSlider;  // hier ausserhalb von setup klebt es in der Javascript-Welt /
 let newValueSlider;
 let thirdValueSlider;
 
-let farbwert;
-farbwert = 0;
+let mauswert;
+mauswert = 0;
 
 
 function setup() {
@@ -49,7 +49,7 @@ let newInputMin= 0; // min Wert
 let newInputMax = 400; // max Wert
 
 let newOutputMin = 0; // min Wert
-let newOutputMax = 20;// max Wert
+let newOutputMax = 12;// max Wert
 
 let newOutputValue= map(newInputValue, newInputMin, newInputMax, newOutputMin, newOutputMax); // umrechnen von einem Bereich in einen anderen Bereich
 console.log(newOutputValue); // 
@@ -75,17 +75,16 @@ console.log(thirdOutputValue); //
 
   fill(255-outputValue,thirdOutputValue, 120); // Kreisfarbe von weiss zu schwarz je nach Mausposition
   strokeWeight(0+newOutputValue);
-  stroke(200,0,200)
 
-  ellipse(width/2,height/2+outputValue-250,250,250);
-  arc(width/2-200,height/2-200, outputValue/2, outputValue/2, 120, PI + HALF_PI);
+  ellipse(width/2+mauswert,height/2+outputValue-250,250,250);
+  arc(width/2-220,height/2-220+mauswert, outputValue/2, outputValue/2, 120, PI + HALF_PI);
   triangle(width/2+outputValue-100, height/2+100, width/2+280, height/2+280, width/2-280, height/2+280);
 
 }
 
 
 function mouseClicked() {
-  mauswert = mauswert + 40; 
+  mauswert = mauswert - 10; 
   console.log(mauswert);
 
 
