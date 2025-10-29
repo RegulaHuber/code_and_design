@@ -1,6 +1,6 @@
 Arbeitsauftrag Nr. 1:
 
-https://github.com/RegulaHuber/code_and_design/aufgabe_01/index.html
+[aufgabe_01](https://regulahuber.github.io/code_and_design/aufgabe_01)
 
 Lernjournal Arbeitsauftrag Nr. 1:<br>
 Welche Art von Beziehung stellst du her?<br>
