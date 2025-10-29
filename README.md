@@ -1,5 +1,5 @@
 Arbeitsauftrag Nr. 1:
 
-https://regulahuber.github.io/modul_webtech/regula_huber.html
+https://github.com/RegulaHuber/code_and_design/aufgabe_01/index.html
 
 Lernjournal:
