@@ -10,4 +10,4 @@ Wo wird das Steuern selbst zu einer Erfahrung?<br>
 Es ist interessant zu sehen, wie sich die Farben der Objekte ändern, wenn sie näher kommen. Durch die zusätzlichen Slider werden die Objekte weiter verändert (Kontur und Farbe).
 
 Entdeckungen / Inspiration:<br>
-Inspo: PacMan. Aber unlösbar: Wer schafft es, dass sich eine Form mit einer anderen berührt?
+PacMan. Aber unlösbar: Wer schafft es, dass sich eine Form mit einer anderen berührt?
