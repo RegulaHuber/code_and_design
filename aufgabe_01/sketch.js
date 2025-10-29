@@ -84,7 +84,7 @@ console.log(thirdOutputValue); //
 
 
 function mouseClicked() {
-  mauswert = mauswert - 20; 
+  mauswert = mauswert - 10; 
   console.log(mauswert);
 
 
