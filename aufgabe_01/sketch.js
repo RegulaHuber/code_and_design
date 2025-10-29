@@ -82,7 +82,6 @@ console.log(thirdOutputValue); //
 
 }
 
-// just adding a comment
 
 function mouseClicked() {
   mauswert = mauswert - 10; 
