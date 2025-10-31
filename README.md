@@ -11,3 +11,6 @@ Es ist interessant zu sehen, wie sich die Farben der Objekte ändern, wenn sie n
 
 Entdeckungen / Inspiration:<br>
 PacMan. Aber unlösbar: Wer schafft es, dass sich eine Form mit einer anderen berührt?
+
+Feedback von Mitschüler:
+Interessante und spannende klare Formen, könnte ein Sonnenaufgang/untergang darstellen.
