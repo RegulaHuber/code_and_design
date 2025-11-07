@@ -24,11 +24,9 @@ function draw() {
   rotate(drehwinkel);
   fill(200, 240, 0 );
   rect(0, 0, 200, 200);
-stroke('magenta');
+  stroke('magenta');
   strokeWeight(5);
-
   line(30, 20, 85, 75);
-
   pop     ();
 
 
