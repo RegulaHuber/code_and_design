@@ -2,15 +2,7 @@ Arbeitsauftrag Nr. 1:
 
 [aufgabe_01](https://regulahuber.github.io/code_and_design/aufgabe_01)
 
-Lernjournal Arbeitsauftrag Nr. 1:<br>
-Welche Art von Beziehung stellst du her?<br>
-Mit dem erste Slider können die Objekte erstaunlich nah zueinander kommen, aber ich verspreche: Berühren werden sie sich nicht. Sobald die Objekte sich beginnen zu bewegen, ändert sich auch deren "Laune" beziehungsweise die Farbe. Es ist also nicht möglich genau vorauszusagen, was passieren wird und lässt den Nutzer überraschen. Beim Verschieben des Sliders erscheint auch noch ein drittes Objekt, auch dieses hat keine Chance in Kontakt zu treten mit den anderen.
+Arbeitsauftrag Nr. 2:
 
-Wo wird das Steuern selbst zu einer Erfahrung?<br>
-Es ist interessant zu sehen, wie sich die Farben der Objekte ändern, wenn sie näher kommen. Durch die zusätzlichen Slider werden die Objekte weiter verändert (Kontur und Farbe).
+[aufgabe_02](https://regulahuber.github.io/code_and_design/aufgabe_02)
 
-Entdeckungen / Inspiration:<br>
-PacMan. Aber unlösbar: Wer schafft es, dass sich eine Form mit einer anderen berührt?
-
-Feedback von Mitschüler:
-Interessante und spannende klare Formen, könnte ein Sonnenaufgang/untergang darstellen.
