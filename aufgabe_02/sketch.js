@@ -1,5 +1,4 @@
-let size = 100; // Startgrösse der Katze
-
+// Sound laden und abspielen
 let sound;
 
 function preload() {
@@ -12,9 +11,12 @@ function mousePressed() {
   sound.play();
 }
 
+// Katze und Fisch mit interaktiver Grösse
+let size = 100; // Startgrösse der Katze
+let newSize = 80; // Startgrösse des Fisches
 
+// Sternenhimmel
 let stars = [];
-
 const originStars = {x: 200, y: 200};
 
 function setup() {
@@ -33,20 +35,19 @@ function setup() {
       baseBrightness: random(100, 255),               // Grundhelligkeit
       twinkleSpeed: random(0.005, 0.25),              // Funkeln
     });
+    } 
 }
 
-}
-
+// Rotationsgeschwindigkeit des Sternenhimmels
 const rotationSpeed = 0.0005; // rad per frame
 
+// Zeichnen der Szene
 function draw() {
   background(10,20,80);
 
-  
   //  Polarstern
-  fill(255); // hellgelb
+  fill(255); // weiss
   circle(originStars.x, originStars.y, 4);
-
 
   // Sternenhimmel
    for (let s of stars) {
@@ -62,7 +63,6 @@ function draw() {
     pop();
   }
 
-
   // Mausposition auf kleineren Bereich mappen
   let x = map(mouseX, 0, width, 150, 300);  // nur zwischen 150 und 250
   let y = map(mouseY, 0, height, 150, 300); // nur zwischen 150 und 250
@@ -73,11 +73,11 @@ function draw() {
   fill(0,0,0); // schwarz
   rect(0, height/3*2, width, height); // Boden
 
-  // Katze
+  // KATZE
   push();                
   let zoom = size / 100;
   scale(zoom);
-  translate(width/2-500,height/3*2-260);  
+  translate(width/2-350,height/3*2-260);  
 
   // Schwanz
   stroke(255);
@@ -145,7 +145,7 @@ function draw() {
   pop(); 
   
 
-  // Fisch folgt  Maus
+  // Fisch folgt Maus
   push();
   translate(mouseX, mouseY); // bewegt die ganze Gruppe
   drawFish(); // zeichnet den Fisch an der neuen Position
@@ -154,11 +154,22 @@ function draw() {
 }
 
 function mouseClicked() {
-  size += 2; // 
+  // Katze vergrössern
+  size += 2.5;
+
+  // Fisch verkleinern
+  newSize -= 2.5;
+  if (newSize < 5) {
+    newSize = 5; // Mindestgröße
+  }
 }
 
 function drawFish() {
   noStroke()
+
+    push();                
+  let zoomFish = newSize / 70;
+  scale(zoomFish); // verkleinern
 
   // Schwanzflosse hinten
   fill(255, 120, 0);
@@ -177,4 +188,6 @@ function drawFish() {
   circle(18, -10, 15); //circle(x, y, d)
   fill(0);
   circle(18, -10, 5);
+
+  pop();
 }
