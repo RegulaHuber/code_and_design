@@ -39,7 +39,7 @@ function setup() {
 }
 
 // Rotationsgeschwindigkeit des Sternenhimmels
-const rotationSpeed = 0.0005; // rad per frame
+const rotationSpeed = 0.0005;
 
 // Zeichnen der Szene
 function draw() {
@@ -117,8 +117,8 @@ function draw() {
 
   // Pupillen
   fill(0);
-  ellipse(left + dx, eyeY + dy, 8);
-  ellipse(right + dx, eyeY + dy, 8);
+  ellipse(left + dx, eyeY + dy, 7,10);
+  ellipse(right + dx, eyeY + dy, 7,10);
 
   // Nase
   fill(255, 150, 150);
@@ -155,10 +155,10 @@ function draw() {
 
 function mouseClicked() {
   // Katze vergrössern
-  size += 2.5;
+  size += 3;
 
   // Fisch verkleinern
-  newSize -= 2.5;
+  newSize -= 3;
   if (newSize < 5) {
     newSize = 5; // Mindestgröße
   }
