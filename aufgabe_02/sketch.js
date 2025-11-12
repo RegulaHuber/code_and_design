@@ -25,7 +25,7 @@ function setup() {
     const radius = (width ** 2 + height ** 2) ** 0.5 * 0.7;
   
     // Sternenhimmel
-    for (let i = 0; i < 500; i++) {                  // Anzahl Sterne 
+    for (let i = 0; i < 400; i++) {                  // Anzahl Sterne 
     stars.push({                                      // Objekt für jeden Stern
       x: random(radius * 2) - radius + originStars.x, // Zufällige Position
       y: random(radius * 2) - radius + originStars.y,                
