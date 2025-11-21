@@ -1,3 +1,4 @@
+// ...existing code...
 /**
  * HandPose Boilerplate mit ml5.js
  * 
@@ -162,6 +163,9 @@ function draw() {
   fill(rightRectColor[0], rightRectColor[1], rightRectColor[2]);
   rect(width - sideRectW, 0, sideRectW, height);
   pop();
+
+  // draw centered message (not mirrored)
+  drawCenteredMessage();
 }
 
 /**
@@ -544,7 +548,19 @@ function drawWhiteCircles() {
   }
 }
 
+// draw centered congratulations message
+function drawCenteredMessage() {
+  push();
+  textAlign(CENTER, CENTER);
+  textSize(48);
+  noStroke();
+  fill(255);
+  text('Hello, show your thumbs and create a blue world!', width / 2, height / 2);
+  pop();
+}
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   ratio = width / video.width;
 }
+// ...existing code...
