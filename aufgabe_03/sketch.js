@@ -595,7 +595,7 @@ function drawCenteredPurpleMessage() {
   textSize(48);
   noStroke();
   fill(150, 0, 255);
-  text('Congratulations to a purple world!', width / 2, height / 2 + 60);
+  text('Congratulations to a purple world :-)', width / 2, height / 2 + 60);
   pop();
 }
 
