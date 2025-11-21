@@ -164,8 +164,9 @@ function draw() {
   rect(width - sideRectW, 0, sideRectW, height);
   pop();
 
-  // draw centered message (not mirrored)
+  // draw centered messages (not mirrored)
   drawCenteredMessage();
+  drawCenteredPurpleMessage();
 }
 
 /**
@@ -227,7 +228,7 @@ function drawHandPoints() {
  * Gibt 'left' oder 'right' oder null zurück.
  */
 function checkSideRectTouch(circle) {
-  // circle.x ist in gespiegeltem Koordinatensystem (wegen push/scale(-1,1)),
+  // circle.x ist in gespiegeltem Koordinatensystem (wegen push/scale(-1,1))),
   // Bildschirm-x = width - circle.x
   const screenX = width - circle.x;
   if (screenX - circle.r <= sideRectW) return 'left';
@@ -548,14 +549,53 @@ function drawWhiteCircles() {
   }
 }
 
-// draw centered congratulations message
+// draw centered congratulations message (only when all circles are blue)
 function drawCenteredMessage() {
+  function isBlueColor(col) {
+    return col && col[0] === leftRectColor[0] && col[1] === leftRectColor[1] && col[2] === leftRectColor[2];
+  }
+
+  // Check blue & purple main circles
+  if (!isBlueColor(blueCircle.color)) return;
+  if (!isBlueColor(purpleCircle.color)) return;
+
+  // Check all white circles
+  for (let i = 0; i < whiteCircles.length; i++) {
+    if (!isBlueColor(whiteCircles[i].color)) return;
+  }
+
+  // All circles are blue -> show message
   push();
   textAlign(CENTER, CENTER);
   textSize(48);
   noStroke();
-  fill(255);
-  text('Hello, show your thumbs and create a blue world!', width / 2, height / 2);
+  fill(0, 0, 255);
+  text('Congratulations to a blue world!', width / 2, height / 2);
+  pop();
+}
+
+// draw centered congratulations message (only when all circles are purple)
+function drawCenteredPurpleMessage() {
+  function isPurpleColor(col) {
+    return col && col[0] === rightRectColor[0] && col[1] === rightRectColor[1] && col[2] === rightRectColor[2];
+  }
+
+  // Check main circles
+  if (!isPurpleColor(blueCircle.color)) return;
+  if (!isPurpleColor(purpleCircle.color)) return;
+
+  // Check all white circles
+  for (let i = 0; i < whiteCircles.length; i++) {
+    if (!isPurpleColor(whiteCircles[i].color)) return;
+  }
+
+  // All circles are purple -> show message (slightly lower to avoid overlap)
+  push();
+  textAlign(CENTER, CENTER);
+  textSize(48);
+  noStroke();
+  fill(150, 0, 255);
+  text('Congratulations to a purple world!', width / 2, height / 2 + 60);
   pop();
 }
 
