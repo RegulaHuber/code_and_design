@@ -570,7 +570,7 @@ function drawCenteredMessage() {
   textSize(48);
   noStroke();
   fill(0, 0, 255);
-  text('Congratulations to a blue world!', width / 2, height / 2);
+  text('Congratulations to a blue world!!', width / 2, height / 2);
   pop();
 }
 
