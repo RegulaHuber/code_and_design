@@ -8,4 +8,4 @@ Arbeitsauftrag Nr. 2:
 
 Übung Gestensteuerung:
 
-[Übung Gestensteuerung](https://regulahuber.github.io/code_and_design/uebungen/ueb-07_learning/)
+[Übung Gestensteuerung](https://regulahuber.github.io/code_and_design/uebungen/ueb-07_gestensteuerung/)
